@@ -1,0 +1,46 @@
+
+
+.card {
+  background: #004e89;
+  position: relative;
+  color: #f3f3dc;
+  top: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+  height: 150px;
+  width: 250px;
+  padding: 20px 10px 0px 20px;
+}
+
+body {
+  font-family: 'Aclonica';
+  font-size: 22px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  padding: 8px;
+  color: white;
+  background-color: #01AB76;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@keyframes cardanim {
+  to {
+    transform: rotateX(360deg);
+    opacity: 0;
+    margin-left: 500px;
+  }
+}
+
+.fade.ng-leave {
+  animation: cardanim .5s linear;
+}
